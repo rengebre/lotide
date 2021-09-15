@@ -25,9 +25,9 @@ const eqObjects = function(object1, object2) {
     }
     let arrFlag = (Array.isArray(object1[key]) && Array.isArray(object2[key]));
     if (arrFlag && eqArrays(object1[key], object2[key])) {
-        continue;
+      continue;
     } else if (object1[key] === object2[key]) {
-        continue;
+      continue;
     }
     return false;
   }
