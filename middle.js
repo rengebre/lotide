@@ -11,7 +11,7 @@ const middle = function(array) {
   } else {
     return [array[middleVal - 0.5], array[middleVal + 0.5]];
   }
-}
+};
 
  
 module.exports = middle;

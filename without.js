@@ -39,8 +39,8 @@ const without = function(sourceArray, itemsToRemove) {
 //   let returnArray = [...sourceArray];
 
 //   for (let i = 0; i < itemsToRemove.length; i++) {
-//     returnArray = (returnArray.filter(function(ele) { 
-//       return ele !== itemsToRemove[i]; 
+//     returnArray = (returnArray.filter(function(ele) {
+//       return ele !== itemsToRemove[i];
 //     }));
 //   }
 //   return returnArray;
