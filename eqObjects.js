@@ -34,6 +34,8 @@ const eqObjects = function(object1, object2) {
     let arrFlag = (Array.isArray(object1[key]) && Array.isArray(object2[key]));
     if (arrFlag && eqArrays(object1[key], object2[key])) {
       continue;
+    } else if (typeof object1[key] === 'object' && eqObjects(object1[key], object2[key])) {
+      continue;
     } else if (object1[key] === object2[key]) {
       continue;
     }
@@ -42,6 +44,9 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+// console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })) // => true
+// console.log(eqObjects({ a: { y: 0, z: { a: [1, 2] } }, b: 2 }, { a: { y: 0, z: { a: [1, 3] } }, b: 2 })) // => false
+// console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }))// => false
 // const ab = { a: "1", b: "2" };
 // const ba = { b: "2", a: "1" };
 // assertEqual(eqObjects(ab, ba), true); // => true
