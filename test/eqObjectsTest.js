@@ -2,9 +2,9 @@ const eqObjects = require('../eqObjects');
 const assertEqual = require('../assertEqual');
 
 // object-ception testing
-console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })) // => true
-console.log(eqObjects({ a: { y: 0, z: { a: [1, 2] } }, b: 2 }, { a: { y: 0, z: { a: [1, 3] } }, b: 2 })) // => false
-console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }))// => false
+console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => true
+console.log(eqObjects({ a: { y: 0, z: { a: [1, 2] } }, b: 2 }, { a: { y: 0, z: { a: [1, 3] } }, b: 2 })); // => false
+console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }));// => false
 
 // Base eqObject testing
 const ab = { a: "1", b: "2" };

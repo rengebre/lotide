@@ -8,7 +8,7 @@ assertEqual(findKey({
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
-}, x => x.stars === 2), 'noma')
+}, x => x.stars === 2), 'noma');
 
 assertEqual(findKey({
   "Blue Hill": { stars: 1 },
@@ -17,7 +17,7 @@ assertEqual(findKey({
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
-}, x => x.stars === 5), undefined)
+}, x => x.stars === 5), undefined);
 
 assertEqual(findKey({
   "Blue Hill": { stars: 1 },
@@ -26,4 +26,4 @@ assertEqual(findKey({
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
-}, x => x.stars === 3), 'Akaleri')
+}, x => x.stars === 3), 'Akaleri');
