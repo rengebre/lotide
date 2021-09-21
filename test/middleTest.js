@@ -3,7 +3,7 @@ const assert = require('chai').assert;
 
 describe('#middle', () => {
   it('should return an empty array when passed in an array of 1 element', () => {
-    assert.deepEqual(middle([1]), []);
+    assert.deepEqual(middle([]), []);
   });
 
   it('should return an empty array when passed in an array of 2 elements', () => {
