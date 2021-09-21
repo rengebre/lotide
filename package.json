@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@rengebre/lotide",
   "version": "1.0.0",
-  "description": "mock up of lodash library",
+  "description": "mock up of lodash library completed for the Web Development bootcamp at Lighthouse Labs",
   "directories": {
     "test": "test"
   },
@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/rengebre/lotide.git"
   },
-  "author": "Russell Engebretson",
+  "author": {
+    "name": "Russell Engebretson",
+    "email": "russell.engebretson@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rengebre/lotide/issues"
